@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Header styling */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+    overflow: auto;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 30px;
+    color: blue;
+}
+
+/* Hero bar styling */
+.hero-banner {
+    background-image: url(../images/02-hero-bg.jpg);
+    display: block;
+    height: 300px;
+    width: 100%;
+    /* margin-bottom: 25px; */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.hero-banner h2 {
+    color: red;
+    font-size: 40px;
+    background-color: yellow;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* About me styling */
+
+#about {
+    align-items: flex-start;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 100%;
+    height: 10%;
+    color: blue;
+}
+
+#about-title {
+    width: 100%;
+}
+
+.flex-about {
+    display: flex;
+    align-items: flex-end;
+    flex-basis: calc(50% - 1em);
+    margin: .5em;
+    background-color: lightcyan;
+    padding: 20px;
+
+}
+
+.profile-pic {
+    max-width: 300px;
+}
+
+img {
+    border-radius: 4px;
+    width: 250px;
+}
+
+/* Work section styling */
+
+#work {
+    padding: 20px;
+}
+
+.proj1 {
+    background-image: url(../images/02-portfolio-1.jpg);
+}
+
+.proj2 {
+    background-image: url(../images/02-portfolio-2.jpg);
+}
+
+.proj3 {
+    background-image: url(../images/02-portfolio-3.jpg);
+}
+
+.proj4 {
+    background-image: url(../images/02-portfolio-4.jpg);
+}
+
+.proj5 {
+    background-image: url(../images/02-run-buddy.jpg);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    display: flex;
+    align-items: flex-end;
+    flex-basis: calc(50% - 1em);
+    margin: .5em;
+    min-height: 150px;
+    background-size: cover;
+}
+
+.flex-item:first-child {
+    min-height: 300px;
+    flex-basis: 100%;
+}
+
+.flex-item div {
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.page-wrapper {
+    background-color: aqua;
+}
+
+/* Contact section styling */
+#contact {
+    padding: 20px;
+
+}
+
+#contact nav {
+    background-color: lightcyan;
+}
+
+#contact nav ul li a {
+    color: blue;
+}
+
+
+@media screen and (max-width: 768px) {
+    .flex-item {
+        flex-basis: 100%;
+    }
+
+    .flex-item:first-child {
+        min-height: 150px;
+    }
+}
