@@ -54,12 +54,13 @@ p {
     background-size: cover;
     background-position: center;
     padding-top: 150px;
+    margin-bottom: 0%;
 }
 
 .flex-jumbo {
-    display: flex;
+    /* display: flex;
     align-items: flex-end;
-    flex-basis: calc(50% - 1em);
+    flex-basis: calc(50% - 1em); */
     margin: .5em;
     background-color: lightcyan;
     padding: 20px;
