@@ -9,6 +9,19 @@ body {
     line-height: 1.5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
 /* Navbar Styling */
 #mainNav {
     background-color: navy;
@@ -26,8 +39,34 @@ body {
 
 
 
-/* Header styling */
+/* Header/Hero/Jumbotron styling */
 
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    max-width: 300px;
+}
+
+img {
+    border-radius: 4px;
+    width: 250px;
+}
+
+.jumbotron {
+    background-image: url(../images/02-hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Main Styling */
+.page-wrapper {
+    background-color: aqua;
+}
 
 /* Hero bar styling */
 .hero-banner {
@@ -49,22 +88,11 @@ body {
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
 
-p {
-    margin: 0;
-}
 
 /* About me styling */
 
-#about {
+/* #about {
     align-items: flex-start;
     padding: 20px;
     clear: both;
@@ -72,30 +100,19 @@ p {
     width: 100%;
     height: 10%;
     color: blue;
-}
+} */
 
-#about-title {
-    width: 100%;
-}
-
-.flex-about {
+/* .flex-about {
     display: flex;
     align-items: flex-end;
-    /* flex-basis: calc(50% - 1em); */
+    flex-basis: calc(50% - 1em);
     margin: .5em;
     background-color: lightcyan;
     padding: 20px;
 
-}
+} */
 
-.profile-pic {
-    max-width: 300px;
-}
 
-img {
-    border-radius: 4px;
-    width: 250px;
-}
 
 /* Work section styling */
 
@@ -123,50 +140,40 @@ img {
     background-image: url(../images/02-run-buddy.jpg);
 }
 
-.flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+.col-sm-12 {
+    padding: 5px;
 }
 
-.flex-item {
-    display: flex;
-    align-items: flex-end;
-    flex-basis: calc(50% - 1em);
-    margin: .5em;
-    min-height: 150px;
-    background-size: cover;
+.card-body {
+    color: white;
 }
 
-.flex-item:first-child {
-    min-height: 300px;
-    flex-basis: 100%;
-}
-
-.flex-item div {
-    background-color: lightgreen;
-    padding: 10px;
-}
-
-.page-wrapper {
-    background-color: aqua;
-}
-
-/* Contact section styling */
-#contact {
+/* Skills/Contact/About section styling */
+.personal-info {
     padding: 20px;
+}
+
+.page-section {
+    padding: 20px;
+    align-items: flex-start;
+    clear: both;
+    float: right;
+    width: 100%;
+    height: 10%;
+    color: blue;
+    /* margin: 10px; */
 
 }
 
-#contact nav {
+.page-section nav,
+.page-section p {
     background-color: lightcyan;
+    padding: 20px;
 }
 
-#contact nav ul li a {
+.page-section nav ul li a {
     color: blue;
 }
-
 
 @media screen and (max-width: 768px) {
     .flex-item {

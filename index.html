@@ -46,7 +46,7 @@
     <!-- hero section  -->
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4 text-center">Lee Dillon - Software Engineer</h1>
+            <h1 class="display-4 flex-about text-center">Lee Dillon - Software Engineer</h1>
             <div class="flex">
                 <p class="lead flex-about text-center">Thank you for visiting, you can check out my portfolio of work
                     below!</p>
@@ -57,78 +57,125 @@
 
 
     <main class="page-wrapper">
-        <!-- about me -->
-        <section class="page-section flex" id="about">
-            <h2 class="" id="about-title">About Me</h2>
-            <br>
-            <p class="flex-about">I am a financial professional with over seven years of experience working with
-                customers and
-                delivering results
-                across
-                different areas of the NatWest Group. In 2021 I went through a reskilling program to become a Software
-                Engineer,
-                I love
-                my new career and am always looking for opportunities to learn and grow.</p>
-            <img src="./images/profile-pic.png" alt="My profile pic" class="profile-pic flex-about">
-        </section>
 
-        <!-- portfolio container -->
-        <section class="page-section" id="work">
-            <h2>Work</h2>
-            <div class="flex">
-                <a href="https://leedillon.github.io/weekly-challenge-1/" target="_blank" class="proj1 flex-item">
-                    <div>
-                        <h3>Weekly Challenge One</h3>
-                        <p>category</p>
+        <!-- work section -->
+        <div class="row" id="work">
+            <div class="col-sm-12">
+                <div class="card proj1">
+                    <div class="card-body">
+                        <h5 class="card-title">Weekly Challenge One</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="https://leedillon.github.io/weekly-challenge-1/" class="btn btn-primary">View here</a>
                     </div>
-                </a>
-                <a href="#" class="proj2 flex-item">
-                    <div>
-                        <h3>Place Holder</h3>
-                        <p>category</p>
-                    </div>
-                </a>
-                <a href="#" class="proj3 flex-item">
-                    <div>
-                        <h3>Place Holder</h3>
-                        <p>category</p>
-                    </div>
-                </a>
-                <a href="#" class="proj4 flex-item">
-                    <div>
-                        <h3>Place Holder</h3>
-                        <p>category</p>
-                    </div>
-                </a>
-                <a href="#" class="proj5 flex-item">
-                    <div>
-                        <h3>Place Holder</h3>
-                        <p>category</p>
-                    </div>
-                </a>
+                </div>
             </div>
-        </section>
+            <div class="col-lg-6 col-sm-12">
+                <div class="card proj2">
+                    <div class="card-body">
+                        <h5 class="card-title">Weekly Challenge Two</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="https://leedillon.github.io/lee-dillon-portfolio/" class="btn btn-primary">Go
+                            somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="card proj3">
+                    <div class="card-body">
+                        <h5 class="card-title">Placeholder Project Three</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="card proj4">
+                    <div class="card-body">
+                        <h5 class="card-title">Placeholder Project Four</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="card proj5">
+                    <div class="card-body">
+                        <h5 class="card-title">Placeholder Project Five</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <!-- contact -->
-        <section class="page-section" id="contact">
-            <h2>Contact Me</h2>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="mailto:lee_dillon@hotmail.com">E-mail: lee_dillon@hotmail.com</a>
-                    </li>
-                    <li>
-                        <a href="">Phone Number: 07779245187</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/LeeDillon">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/lee-dillon-8a46891b1/">LinkedIn</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+        <div class="row personal-info">
+            <!-- skills section -->
+            <div class="col-lg-4 col-md-6 col-sm-12 page-section" id="skills">
+                <h2>My Skills</h2>
+                <br>
+                <nav>
+                    <ul>
+                        <li>
+                            <p>HTML</p>
+                        </li>
+                        <li>
+                            <p>CSS</p>
+                        </li>
+                        <li>
+                            <p>JavaScript</p>
+                        </li>
+                        <li>
+                            <p>React</p>
+                        </li>
+                        <li>
+                            <p>Java</p>
+                        </li>
+                        <li>
+                            <p>Python</p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- about me -->
+            <div class="col-lg-4 col-md-6 col-sm-12 page-section" id="about">
+                <h2 id="about-title">About Me</h2>
+                <br>
+                <p class="flex-about">I am a financial professional with over seven years of experience working with
+                    customers and
+                    delivering results
+                    across
+                    different areas of the NatWest Group. In 2021 I went through a reskilling program to become a
+                    Software
+                    Engineer,
+                    I love
+                    my new career and am always looking for opportunities to learn and grow.</p>
+            </div>
+
+
+            <!-- contact -->
+            <div class="col-lg-4 col-md-6 col-sm-12 page-section" id="contact">
+                <h2>Contact Me</h2>
+                <br>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="mailto:lee_dillon@hotmail.com">E-mail: lee_dillon@hotmail.com</a>
+                        </li>
+                        <li>
+                            <a href="">Phone Number: 07779245187</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/LeeDillon">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/lee-dillon-8a46891b1/">LinkedIn</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
     </main>
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
